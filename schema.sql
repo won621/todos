@@ -1,0 +1,7 @@
+CREATE TABLE todos (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(200) NOT NULL,
+  done BOOLEAN NOT NULL DEFAULT FALSE,
+  due_date DATE NULL,                    -- 실습 5: 마감일 (선택 입력)
+  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
